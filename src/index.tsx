@@ -1,3 +1,11 @@
-export function multiply(a: number, b: number): Promise<number> {
-  return Promise.resolve(a * b);
+import React, { ReactNode } from 'react';
+
+interface IRotatableProps {
+  children: ReactNode;
 }
+
+function Rotatable({ children }: IRotatableProps) {
+  return <React.Fragment>{children}</React.Fragment>;
+}
+
+export default Rotatable;

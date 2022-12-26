@@ -11,11 +11,11 @@ npm install rn-press-rotate
 ## Usage
 
 ```js
-import { multiply } from 'rn-press-rotate';
+import { Rotatable } from 'rn-press-rotate';
 
-// ...
+// then wrap your component with Rotatable
 
-const result = await multiply(3, 7);
+const RotatableComponent = () => <Rotatable><MyComponent/></Rotatable>
 ```
 
 ## Contributing
@@ -28,4 +28,3 @@ MIT
 
 ---
 
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
